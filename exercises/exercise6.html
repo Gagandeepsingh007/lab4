@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+
+<body>
+    <script>
+        function square(num) {
+            return function(num) {
+                return num * num;
+            }
+        }
+        let squareIt = square(5);
+        alert("The square of 5 = " + squareIt(5));
+    </script>
+</body>
+
+</html>
